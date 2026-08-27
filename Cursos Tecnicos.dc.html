@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet"><style>body{margin:0;background:#faf6ee;color:#1c2333;-webkit-font-smoothing:antialiased}a{color:#1c3557}a:hover{color:oklch(0.45 0.09 60)}</style></helmet>
+<div style="font-family:'Karla',system-ui,sans-serif;max-width:100%;overflow-x:hidden">
+
+<div style="display:grid;grid-template-columns:repeat(4,1fr);height:5px"><span style="background:oklch(0.45 0.09 250)"></span><span style="background:oklch(0.45 0.09 150)"></span><span style="background:oklch(0.45 0.09 60)"></span><span style="background:oklch(0.45 0.09 310)"></span></div>
+<header style="padding:22px 40px;border-bottom:1px solid rgba(28,35,51,.12);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="width:34px;height:34px;border:1px solid rgba(28,35,51,.3);border-radius:9px;display:flex;align-items:center;justify-content:center;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.02em">EE</div>
+<div style="font-size:15px;line-height:1.25;max-width:230px">Escola Estadual<br><strong style="font-weight:600">Afiz Gebara Doutor</strong></div>
+</div>
+<nav style="display:flex;gap:26px;font:500 15px 'Karla',system-ui,sans-serif">
+<a href="#cursos" style="text-decoration:none">Cursos</a>
+<a href="#detalhes" style="text-decoration:none">Detalhes</a>
+<a href="#depoimentos" style="text-decoration:none">Depoimentos</a>
+</nav>
+</header>
+
+<section style="padding:88px 40px 80px;background:oklch(0.95 0.035 90);border-bottom:1px solid rgba(28,35,51,.1)"><div style="max-width:900px">
+<p style="margin:0 0 26px;font:700 12.5px 'Karla',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(28,35,51,.55)">Educação profissional · Ensino técnico</p>
+<h1 style="margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:clamp(38px,5.4vw,66px);font-weight:500;line-height:1.08;letter-spacing:-.02em;text-wrap:balance">Quatro cursos técnicos para <span style="background:oklch(0.86 0.09 150);padding:0 .12em;border-radius:6px">começar sua carreira</span> ainda na escola.</h1>
+<p style="margin:32px 0 0;max-width:560px;font-size:19px;line-height:1.6;color:rgba(28,35,51,.72);text-wrap:pretty">Aqui você encontra o que se estuda em cada curso, onde os formados costumam trabalhar e o que dizem os alunos que já estão nessa jornada. Fique à vontade para explorar.</p>
+</div></section>
+
+<section aria-label="Imagens dos cursos" style="padding:0 0 90px">
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
+<div style="aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px);border-top:3px solid oklch(0.45 0.09 250);display:flex;align-items:flex-end;padding:14px"><span style="font:500 11.5px 'Karla',system-ui,sans-serif;color:rgba(28,35,51,.55)">foto · aula de administração</span></div>
+<div style="aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px);border-top:3px solid oklch(0.45 0.09 150);display:flex;align-items:flex-end;padding:14px;margin-top:34px"><span style="font:500 11.5px 'Karla',system-ui,sans-serif;color:rgba(28,35,51,.55)">foto · laboratório de informática</span></div>
+<div style="aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px);border-top:3px solid oklch(0.45 0.09 60);display:flex;align-items:flex-end;padding:14px"><span style="font:500 11.5px 'Karla',system-ui,sans-serif;color:rgba(28,35,51,.55)">foto · bancada de eletrônica</span></div>
+<div style="aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px);border-top:3px solid oklch(0.45 0.09 310);display:flex;align-items:flex-end;padding:14px;margin-top:34px"><span style="font:500 11.5px 'Karla',system-ui,sans-serif;color:rgba(28,35,51,.55)">foto · centro de distribuição</span></div>
+</div>
+</section>
+
+<section id="cursos" style="padding:0 40px 90px">
+<h2 style="margin:0 0 30px;font:700 12.5px 'Karla',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(28,35,51,.55)">Os quatro cursos</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px">
+<article style="border:1px solid oklch(0.86 0.05 250);border-radius:16px;padding:28px 26px 32px;background:oklch(0.965 0.028 250);display:flex;flex-direction:column;gap:14px">
+<span style="width:22px;height:4px;background:oklch(0.45 0.09 250)"></span>
+<h3 style="margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:25px;font-weight:500;letter-spacing:-.015em">Administração</h3>
+<p style="margin:0;font-size:15.5px;line-height:1.62;color:rgba(28,35,51,.7)">Gestão, finanças e rotinas de escritório para quem gosta de organizar e liderar.</p>
+</article>
+<article style="border:1px solid oklch(0.86 0.05 150);border-radius:16px;padding:28px 26px 32px;background:oklch(0.965 0.028 150);display:flex;flex-direction:column;gap:14px">
+<span style="width:22px;height:4px;background:oklch(0.45 0.09 150)"></span>
+<h3 style="margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:25px;font-weight:500;letter-spacing:-.015em">Desenvolvimento de Sistemas</h3>
+<p style="margin:0;font-size:15.5px;line-height:1.62;color:rgba(28,35,51,.7)">Programação, bancos de dados e criação de aplicativos e sites.</p>
+</article>
+<article style="border:1px solid oklch(0.86 0.05 60);border-radius:16px;padding:28px 26px 32px;background:oklch(0.965 0.028 60);display:flex;flex-direction:column;gap:14px">
+<span style="width:22px;height:4px;background:oklch(0.45 0.09 60)"></span>
+<h3 style="margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:25px;font-weight:500;letter-spacing:-.015em">Eletrônica</h3>
+<p style="margin:0;font-size:15.5px;line-height:1.62;color:rgba(28,35,51,.7)">Circuitos, automação e manutenção de equipamentos, da bancada à indústria.</p>
+</article>
+<article style="border:1px solid oklch(0.86 0.05 310);border-radius:16px;padding:28px 26px 32px;background:oklch(0.965 0.028 310);display:flex;flex-direction:column;gap:14px">
+<span style="width:22px;height:4px;background:oklch(0.45 0.09 310)"></span>
+<h3 style="margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:25px;font-weight:500;letter-spacing:-.015em">Logística</h3>
+<p style="margin:0;font-size:15.5px;line-height:1.62;color:rgba(28,35,51,.7)">Transporte, estoque e distribuição: como produtos chegam onde precisam chegar.</p>
+</article>
+</div>
+</section>
+
+<section id="detalhes" style="padding:0 40px 96px">
+<h2 style="margin:0 0 26px;font:700 12.5px 'Karla',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(28,35,51,.55)">Detalhe de cada curso</h2>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:38px">
+<button onClick="{{ pickAdm }}" style="{{ pillAdm }}">Administração</button>
+<button onClick="{{ pickDev }}" style="{{ pillDev }}">Desenvolvimento de Sistemas</button>
+<button onClick="{{ pickEle }}" style="{{ pillEle }}">Eletrônica</button>
+<button onClick="{{ pickLog }}" style="{{ pillLog }}">Logística</button>
+</div>
+
+<div style="{{ panelStyle }}">
+<sc-if value="{{ isAdm }}" hint-placeholder-val="{{ true }}">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;max-width:1000px">
+<div>
+<h3 style="margin:0 0 6px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:34px;font-weight:500;letter-spacing:-.02em">Administração</h3>
+<p style="margin:0 0 26px;font-size:17.5px;line-height:1.62;color:rgba(28,35,51,.72);max-width:420px">Para quem quer entender como uma empresa funciona por dentro: pessoas, dinheiro e processos.</p>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Principais disciplinas</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85)">
+<li>Gestão de pessoas</li><li>Contabilidade e finanças</li><li>Matemática financeira</li><li>Marketing e vendas</li><li>Empreendedorismo</li>
+</ul>
+</div>
+<div>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Onde trabalhar</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85);border-top:1px solid rgba(28,35,51,.14);padding-top:16px">
+<li>Departamentos administrativos e de RH</li><li>Setor financeiro e de compras</li><li>Bancos e cooperativas de crédito</li><li>Comércio e escritórios de serviços</li><li>Negócio próprio</li>
+</ul>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isDev }}">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;max-width:1000px">
+<div>
+<h3 style="margin:0 0 6px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:34px;font-weight:500;letter-spacing:-.02em">Desenvolvimento de Sistemas</h3>
+<p style="margin:0 0 26px;font-size:17.5px;line-height:1.62;color:rgba(28,35,51,.72);max-width:420px">Para quem quer construir software: sites, aplicativos e sistemas que resolvem problemas reais.</p>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Principais disciplinas</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85)">
+<li>Lógica de programação</li><li>Programação web (front e back-end)</li><li>Banco de dados</li><li>Análise e modelagem de sistemas</li><li>Desenvolvimento mobile</li>
+</ul>
+</div>
+<div>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Onde trabalhar</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85);border-top:1px solid rgba(28,35,51,.14);padding-top:16px">
+<li>Empresas de tecnologia e software houses</li><li>Setores de TI de qualquer empresa</li><li>Suporte e infraestrutura</li><li>Startups</li><li>Projetos como freelancer</li>
+</ul>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isEle }}">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;max-width:1000px">
+<div>
+<h3 style="margin:0 0 6px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:34px;font-weight:500;letter-spacing:-.02em">Eletrônica</h3>
+<p style="margin:0 0 26px;font-size:17.5px;line-height:1.62;color:rgba(28,35,51,.72);max-width:420px">Para quem gosta de entender como as coisas funcionam e de trabalhar com as mãos e com precisão.</p>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Principais disciplinas</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85)">
+<li>Eletricidade e circuitos</li><li>Eletrônica analógica e digital</li><li>Microcontroladores</li><li>Automação industrial</li><li>Manutenção de equipamentos</li>
+</ul>
+</div>
+<div>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Onde trabalhar</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85);border-top:1px solid rgba(28,35,51,.14);padding-top:16px">
+<li>Indústrias e linhas de produção</li><li>Manutenção predial e hospitalar</li><li>Telecomunicações</li><li>Energia solar e instalações elétricas</li><li>Assistência técnica</li>
+</ul>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isLog }}">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;max-width:1000px">
+<div>
+<h3 style="margin:0 0 6px;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:34px;font-weight:500;letter-spacing:-.02em">Logística</h3>
+<p style="margin:0 0 26px;font-size:17.5px;line-height:1.62;color:rgba(28,35,51,.72);max-width:420px">Para quem quer coordenar o caminho dos produtos, do fornecedor até a mão do cliente.</p>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Principais disciplinas</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85)">
+<li>Gestão de estoques e armazenagem</li><li>Transporte e distribuição</li><li>Compras e suprimentos</li><li>Comércio exterior</li><li>Qualidade e processos</li>
+</ul>
+</div>
+<div>
+<p style="margin:0 0 12px;font:700 12px 'Karla',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:rgba(28,35,51,.5)">Onde trabalhar</p>
+<ul style="margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:16.5px;color:rgba(28,35,51,.85);border-top:1px solid rgba(28,35,51,.14);padding-top:16px">
+<li>Centros de distribuição</li><li>Transportadoras e operadores logísticos</li><li>Indústrias e varejo</li><li>Portos, aeroportos e comércio exterior</li><li>E-commerce</li>
+</ul>
+</div>
+</div>
+</sc-if>
+</div>
+</section>
+
+<section id="depoimentos" style="background:{{ quoteBg }};color:#faf6ee;padding:88px 40px 92px;transition:background .5s">
+<h2 style="margin:0 0 40px;font:700 12.5px 'Karla',system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(250,246,238,.6)">Quem estuda aqui</h2>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px">
+<button onClick="{{ qAdm }}" style="{{ qPillAdm }}">Administração</button>
+<button onClick="{{ qDev }}" style="{{ qPillDev }}">Desenvolvimento de Sistemas</button>
+<button onClick="{{ qEle }}" style="{{ qPillEle }}">Eletrônica</button>
+<button onClick="{{ qLog }}" style="{{ qPillLog }}">Logística</button>
+</div>
+<div style="max-width:940px;min-height:280px;display:flex;flex-direction:column;justify-content:space-between;gap:34px">
+<div>
+<span style="display:block;width:40px;height:3px;margin-bottom:28px;background:{{ quoteAccent }}"></span>
+<blockquote style="margin:0;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:clamp(24px,3vw,36px);line-height:1.32;font-weight:400;letter-spacing:-.015em;text-wrap:pretty">“{{ quoteText }}”</blockquote>
+</div>
+<div style="display:flex;align-items:flex-end;justify-content:space-between;gap:28px;flex-wrap:wrap">
+<p style="margin:0;font:500 14px 'Karla',system-ui,sans-serif;color:rgba(250,246,238,.62);line-height:1.6">{{ quoteAuthor }}<br>{{ quoteCourse }}</p>
+<div style="display:flex;align-items:center;gap:16px">
+<div style="display:flex;gap:7px">{{ quoteDots }}</div>
+<button onClick="{{ qNext }}" style="font:500 14px 'Karla',system-ui,sans-serif;color:rgba(250,246,238,.85);background:transparent;border:1px solid rgba(250,246,238,.3);border-radius:999px;padding:9px 18px;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2">próximo →</button>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="padding:40px;background:oklch(0.95 0.035 90);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font:500 14px 'Karla',system-ui,sans-serif;color:rgba(28,35,51,.6)">
+<span>Escola Estadual Afiz Gebara Doutor</span>
+<span>Cursos técnicos · 2026</span>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  state = { active: 'adm' };
+  pill(key, hue) {
+    const on = this.state.active === key;
+    return [
+      "font:400 16px 'Karla',system-ui,sans-serif",
+      'padding:11px 22px',
+      'display:inline-flex','align-items:center','white-space:nowrap','line-height:1.2',
+      'border-radius:999px',
+      'cursor:pointer',
+      'transition:background .18s,color .18s,border-color .18s',
+      on ? `background:oklch(0.45 0.09 ${hue})` : 'background:transparent',
+      on ? 'color:#faf6ee' : 'color:rgba(28,35,51,.8)',
+      on ? `border:1px solid oklch(0.45 0.09 ${hue})` : 'border:1px solid rgba(28,35,51,.22)'
+    ].join(';');
+  }
+  quotes = [
+    { c: 'adm', h: 250, n: 'Beatriz M. · módulo 3', t: 'Eu entrei sem saber quase nada de escritório. Hoje faço o controle financeiro no meu estágio e me sinto segura para conversar com qualquer setor.' },
+    { c: 'adm', h: 250, n: 'Lucas P. · módulo 4', t: 'A parte de empreendedorismo me deu coragem. Comecei a ajudar na papelada do negócio da minha família e virei a pessoa que resolve.' },
+    { c: 'dev', h: 150, n: 'Kauã R. · módulo 2', t: 'No segundo semestre a gente já estava publicando um site de verdade. Ver algo que eu escrevi funcionando no celular dos meus amigos mudou tudo para mim.' },
+    { c: 'dev', h: 150, n: 'Helena C. · módulo 4', t: 'Achava que programar era coisa de gênio. É paciência. Erro, entendo o erro e conserto — e cada vez fica mais rápido.' },
+    { c: 'ele', h: 60, n: 'Sofia A. · módulo 4', t: 'As aulas na bancada são minha parte favorita. Consertei o ventilador da minha casa no primeiro mês e desde então não paro de mexer em tudo.' },
+    { c: 'ele', h: 60, n: 'Diego F. · módulo 2', t: 'Quando o circuito acende do jeito que você planejou no papel, dá uma sensação difícil de explicar. É o motivo de eu não faltar.' },
+    { c: 'log', h: 310, n: 'Igor S. · módulo 3', t: 'Eu achava que logística era só caminhão. Descobri que é planejamento, e é isso que eu quero fazer: hoje já ajudo na organização do estoque onde trabalho.' },
+    { c: 'log', h: 310, n: 'Rafaela T. · módulo 3', t: 'Aprendi a olhar um mercado e entender por que tudo está onde está. Não consigo mais entrar numa loja sem repensar as prateleiras.' }
+  ];
+  names = { adm: 'Administração', dev: 'Desenvolvimento de Sistemas', ele: 'Eletrônica', log: 'Logística' };
+  componentDidMount() {
+    this.timer = setInterval(() => this.advance(), 7000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  advance() { this.setState(s => ({ q: ((s.q || 0) + 1) % this.quotes.length })); }
+  goQuote(key) {
+    clearInterval(this.timer);
+    this.timer = setInterval(() => this.advance(), 7000);
+    this.setState({ q: this.quotes.findIndex(x => x.c === key) });
+  }
+  qPill(key, hue) {
+    const on = this.quotes[this.state.q || 0].c === key;
+    return [
+      "font:400 15.5px 'Karla',system-ui,sans-serif", 'padding:10px 20px', 'border-radius:999px',
+      'display:inline-flex', 'align-items:center', 'white-space:nowrap', 'line-height:1.2',
+      'cursor:pointer', 'transition:background .18s,color .18s,border-color .18s',
+      on ? `background:oklch(0.62 0.11 ${hue})` : 'background:transparent',
+      on ? 'color:#1c2333' : 'color:rgba(250,246,238,.75)',
+      on ? `border:1px solid oklch(0.62 0.11 ${hue})` : 'border:1px solid rgba(250,246,238,.28)'
+    ].join(';');
+  }
+  renderVals() {
+    const a = this.state.active;
+    const qi = this.state.q || 0;
+    const q = this.quotes[qi];
+    const dots = this.quotes.map((x, i) => React.createElement('button', {
+      key: i,
+      onClick: () => { clearInterval(this.timer); this.timer = setInterval(() => this.advance(), 7000); this.setState({ q: i }); },
+      'aria-label': `Depoimento ${i + 1}`,
+      style: {
+        width: 8, height: 8, padding: 0, borderRadius: '50%', cursor: 'pointer', border: 'none',
+        transition: 'background .2s',
+        background: i === qi ? `oklch(0.62 0.11 ${x.h})` : 'rgba(250,246,238,.28)'
+      }
+    }));
+    const set = k => () => this.setState({ active: k });
+    return {
+      isAdm: a === 'adm', isDev: a === 'dev', isEle: a === 'ele', isLog: a === 'log',
+      pickAdm: set('adm'), pickDev: set('dev'), pickEle: set('ele'), pickLog: set('log'),
+      pillAdm: this.pill('adm', 250), pillDev: this.pill('dev', 150),
+      pillEle: this.pill('ele', 60), pillLog: this.pill('log', 310),
+      panelStyle: `background:oklch(0.965 0.028 ${{ adm: 250, dev: 150, ele: 60, log: 310 }[a]});border:1px solid oklch(0.88 0.045 ${{ adm: 250, dev: 150, ele: 60, log: 310 }[a]});border-radius:20px;padding:40px 36px 44px;transition:background .3s,border-color .3s`,
+      quoteBg: `oklch(0.29 0.045 ${q.h})`,
+      quoteText: q.t, quoteAuthor: q.n, quoteCourse: this.names[q.c],
+      quoteAccent: `oklch(0.62 0.11 ${q.h})`, quoteDots: dots,
+      qNext: () => { clearInterval(this.timer); this.timer = setInterval(() => this.advance(), 7000); this.advance(); },
+      qAdm: () => this.goQuote('adm'), qDev: () => this.goQuote('dev'),
+      qEle: () => this.goQuote('ele'), qLog: () => this.goQuote('log'),
+      qPillAdm: this.qPill('adm', 250), qPillDev: this.qPill('dev', 150),
+      qPillEle: this.qPill('ele', 60), qPillLog: this.qPill('log', 310)
+    };
+  }
+}
+</script>
+</body>
+</html>
