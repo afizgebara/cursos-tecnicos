@@ -32,19 +32,19 @@
 <section aria-label="Imagens dos cursos" style="padding:0 0 90px">
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
 <figure style="margin:0;aspect-ratio:3/4;border-radius:14px;overflow:hidden;position:relative;border-top:3px solid oklch(0.45 0.09 250);background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px)">
-<img src="images/administracao.jpeg" alt="aula de administração" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
+<img src="images/administracao.jpeg" alt="excursão técnica à cacau show" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
 <figcaption style="position:absolute;left:0;right:0;bottom:0;padding:14px;font:500 11.5px 'Karla',sans-serif;color:rgba(28,35,51,.55)">foto · aula de administração</figcaption>
 </figure>
 <figure style="margin:0;aspect-ratio:3/4;border-radius:14px;overflow:hidden;position:relative;border-top:3px solid oklch(0.45 0.09 150);background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px);margin-top:34px">
-<img src="images/desenvolvimento.jpeg" alt="laboratório de informática" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
+<img src="images/desenvolvimento.jpeg" alt="aula prática de desenvolvimento" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
 <figcaption style="position:absolute;left:0;right:0;bottom:0;padding:14px;font:500 11.5px 'Karla',sans-serif;color:rgba(28,35,51,.55)">foto · laboratório de informática</figcaption>
 </figure>
 <figure style="margin:0;aspect-ratio:3/4;border-radius:14px;overflow:hidden;position:relative;border-top:3px solid oklch(0.45 0.09 60);background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px)">
-<img src="images/eletronica.jpeg" alt="bancada de eletrônica" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
+<img src="images/eletronica.jpeg" alt="atividade prática de eletrônica" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
 <figcaption style="position:absolute;left:0;right:0;bottom:0;padding:14px;font:500 11.5px 'Karla',sans-serif;color:rgba(28,35,51,.55)">foto · bancada de eletrônica</figcaption>
 </figure>
 <figure style="margin:0;aspect-ratio:3/4;border-radius:14px;overflow:hidden;position:relative;border-top:3px solid oklch(0.45 0.09 310);background:repeating-linear-gradient(135deg,rgba(28,35,51,.10) 0 9px,transparent 9px 18px);margin-top:34px">
-<img src="images/logistica.jpeg" alt="centro de distribuição" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
+<img src="images/logistica.jpeg" alt="visita técnica à centro de distribuição" onError="{{ hideBrokenImg }}" style="width:100%;height:100%;object-fit:cover;display:block" />
 <figcaption style="position:absolute;left:0;right:0;bottom:0;padding:14px;font:500 11.5px 'Karla',sans-serif;color:rgba(28,35,51,.55)">foto · centro de distribuição</figcaption>
 </figure>
 </div>
@@ -211,14 +211,14 @@ class Component extends DCLogic {
     ].join(';');
   }
   quotes = [
-    { c: 'adm', h: 250, n: 'Beatriz M. · módulo 3', t: 'Eu entrei sem saber quase nada de escritório. Hoje faço o controle financeiro no meu estágio e me sinto segura para conversar com qualquer setor.' },
-    { c: 'adm', h: 250, n: 'T.R. · Terceiro Ano', t: 'O curso de Administração tem sido muito importante para minha formação. Aprendi sobre organização, planejamento, comunicação, empreendedorismo e finanças.' },
-    { c: 'dev', h: 150, n: 'G.A. · Terceiro Ano', t: 'Desenvolvimento é uma área que introduz o aluno à tecnologia e abre um grande leque de oportunidades de carreira no futuro.' },
-    { c: 'dev', h: 150, n: 'F.L. · Terceiro Ano', t: 'o curso é uma ótima forma de aprender sobre tecnologia e programação, aprendi bastante sobre TI nesse tempo e agradeço a oportunidade de estudar aqui.' },
-    { c: 'ele', h: 60, n: 'Sofia A. · módulo 4', t: 'As aulas na bancada são minha parte favorita. Consertei o ventilador da minha casa no primeiro mês e desde então não paro de mexer em tudo.' },
-    { c: 'ele', h: 60, n: 'Diego F. · módulo 2', t: 'Quando o circuito acende do jeito que você planejou no papel, dá uma sensação difícil de explicar. É o motivo de eu não faltar.' },
-    { c: 'log', h: 310, n: 'M.D. · Terceiro Ano', t: ' A logística conecta o tudo, e ter professores que mostram isso em sua melhor performance é o que faz eu querer estudar logística.' },
-    { c: 'log', h: 310, n: 'B.S. · Terceiro Ano', t: ' O curso têm conteúdos que podem ser trabalhados até mesmo no dia a dia, principalmente pra quem deseja abrir seu próprio negócio.' }
+    { c: 'adm', h: 250, n: 'M.E. · Terceiro Ano A', t: 'O curso é ótimo, os professores ensinam perfeitamente bem, e administração abre portas para muitas possibilidades!' },
+    { c: 'adm', h: 250, n: 'T.R. · Terceiro Ano A', t: 'O curso de Administração tem sido muito importante para minha formação. Aprendi sobre organização, planejamento, comunicação, empreendedorismo e finanças.' },
+    { c: 'dev', h: 150, n: 'Gabriel de Andrade · Terceiro Ano B', t: 'Desenvolvimento é uma área que introduz o aluno à tecnologia e abre um grande leque de oportunidades de carreira no futuro.' },
+    { c: 'dev', h: 150, n: 'Fábio Lucas da Silva. · Terceiro Ano B', t: 'o curso é uma ótima forma de aprender sobre tecnologia e programação, aprendi bastante sobre TI nesse tempo e agradeço a oportunidade de estudar aqui.' },
+    { c: 'ele', h: 60, n: 'J.P. · Segundo Ano G', t: 'O curso de eletrônica é complicado, mas ainda sim é top.' },
+    { c: 'ele', h: 60, n: 'S.G. · Segundo Ano G', t: 'A melhor parte do curso de eletrônica é a disponibilidade de aulas práticas.' },
+    { c: 'log', h: 310, n: 'M.D. · Terceiro Ano C', t: ' A logística conecta o tudo, e ter professores que mostram isso em sua melhor performance é o que faz eu querer estudar logística.' },
+    { c: 'log', h: 310, n: 'Beatriz Silva Almeida · Terceiro Ano C', t: ' O curso têm conteúdos que podem ser trabalhados até mesmo no dia a dia, principalmente pra quem deseja abrir seu próprio negócio.' }
   ];
   names = { adm: 'Administração', dev: 'Desenvolvimento de Sistemas', ele: 'Eletrônica', log: 'Logística' };
   componentDidMount() {
